@@ -1,0 +1,26 @@
+{
+  "name": "webpack-autocdn-plugin",
+  "version": "0.0.1",
+  "description": "a webpack plugin for auto upload asserts to cdn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "img": "node src/uploadImage.js",
+    "asserts": "node src/uploadAsserts.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeniusFunny/webpack-autocdn-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "cdn"
+  ],
+  "author": "GeniusFunny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeniusFunny/webpack-autocdn-plugin/issues"
+  },
+  "homepage": "https://github.com/GeniusFunny/webpack-autocdn-plugin#readme"
+}
