@@ -1,6 +1,7 @@
 const { spawnSync } = require('child_process')
 
 function git(commitMessage, branch) {
+  console.log('开始上传文件到git')
   try {
     gitAdd()
   } catch (e) {
@@ -18,12 +19,14 @@ function git(commitMessage, branch) {
   }
 }
 function gitAdd() {
+  console.log('执行git add')
   const git_add = spawnSync('git', ['add', '.'])
   if (git_add.stderr.length) {
     throw Error(git_add.stderr.toString())
   }
 }
 function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
+  console.log('执行git commit')
   const git_commit = spawnSync('git', ['commit', '-m', commitMessage])
   if (git_commit.stderr.length) {
     throw Error(git_commit.stderr.toString())
@@ -33,6 +36,7 @@ function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
 }
 
 function gitPush(branch = 'master') {
+  console.log('执行git push')
   const git_push = spawnSync('git', ['push', '-u', 'origin', branch])
   if (git_push.stderr.length) {
     console.log('???')
