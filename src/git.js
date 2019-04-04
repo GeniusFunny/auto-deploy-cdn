@@ -35,6 +35,7 @@ function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
 function gitPush(branch = 'master') {
   const git_push = spawnSync('git', ['push', '-u', 'origin', branch])
   if (git_push.stderr.length) {
+    console.log('???')
     console.log(git_push.stderr.toString())
     throw new Error(git_push.stderr.toString())
   } else {
