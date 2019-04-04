@@ -38,13 +38,12 @@ function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
 function gitPush(branch = 'master') {
   const git_push = spawnSync('git', ['push', '-u', 'origin', branch])
   console.log(git_push.stdout.toString())
-  if (git_push.stderr.length) {
-    console.log('???')
-    console.log(git_push.stderr.toString())
-    throw new Error(git_push.stderr.toString())
-  } else {
-    console.log(git_push.stdout.toString())
-  }
+  console.log(git_push.stderr.toString())
+  // if (git_push.stderr.length) {
+  //   throw new Error(git_push.stderr.toString())
+  // } else {
+  //   console.log(git_push.stdout.toString())
+  // }
 }
 
 module.exports = git
