@@ -1,3 +1,17 @@
 const git = require('./git')
+const svn = require('./svn')
 
-git('疯狂测试自动化git，我不是刷活跃度！！！！')
+function autoCDN({commitMessage = '???', svnRemote, gitBranch = 'master'}) {
+  try {
+    git(commitMessage, gitBranch)
+  } catch (e) {
+    throw e
+  }
+  try {
+    svn(svnRemote, commitMessage)
+  } catch (e) {
+    throw e
+  }
+}
+
+module.exports = autoCDN
