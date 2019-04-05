@@ -30,7 +30,7 @@ function svnCo(remote) {
 }
 function svnAdd() {
   console.log('开始执行svn add *')
-  const svn_add = spawnSync('svn', ['add', '*'])
+  const svn_add = spawnSync('svn', ['add', '.'])
   if (svn_add.stderr.length) {
     throw new Error(svn_add.stderr.toString())
   } else {
