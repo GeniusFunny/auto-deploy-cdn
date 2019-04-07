@@ -39,7 +39,6 @@ function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
   } else {
     console.log(output.join(''))
   }
-  console.log(git_commit.output.join(''))
 }
 
 function gitPush(branch = 'master') {
