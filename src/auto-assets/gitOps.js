@@ -21,7 +21,7 @@ function gitOps(commitMessage, branch) {
     throw new Error('执行git commit 错误')
   }
   try {
-    gitPush(branch)
+    // gitPush(branch)
   } catch (e) {
     console.log(e)
     throw new Error('执行git push 错误')
@@ -43,6 +43,8 @@ function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
     cwd: process.cwd()
   })
   console.log(git_commit)
+  console.log(git_commit.stderr.toString())
+  console.log(git_commit.stdout.toString())
   if (git_commit.stderr && git_commit.stderr.length) {
     // throw Error(git_commit.stderr.toString())
   } else if (git_commit.stdout && git_commit.stdout.toString().indexOf('nothing to commit, working tree clean') !== -1) {
