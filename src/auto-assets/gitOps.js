@@ -1,5 +1,4 @@
 const { spawnSync } = require('child_process')
-
 /**
  *
  * @param commitMessage
@@ -10,24 +9,24 @@ function gitOps(commitMessage, branch) {
   console.log('开始上传文件到git')
   try {
     gitAdd()
-  } catch (error) {
+  } catch (e) {
     console.log('git add 操作失败')
-    throw error
+    throw e
   }
   try {
     gitCommit(commitMessage)
-  } catch (error) {
+  } catch (e) {
     console.log('git commit 操作失败')
+    throw e
   }
   try {
     gitPush(branch)
-  } catch (error) {
+  } catch (e) {
     console.log('git push 操作失败')
-    throw error
+    throw e
   }
 }
 function gitAdd() {
-  console.log('执行git add')
   const git_add = spawnSync('git', ['add', '.'], {
     cwd: process.cwd(),
     encoding: 'utf8'

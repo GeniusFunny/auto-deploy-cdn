@@ -1,71 +1,88 @@
 const { spawnSync } = require('child_process')
-const path = require('path')
 const { readdirSync } = require('fs')
+const { tempDir } = require('./config')
+/**
+ * 拉取svn上的资源
+ */
+function svnCoResource(remote) {
+  const svn_checkout = spawnSync('svn', ['checkout', remote], {
+    cwd: tempDir,
+    encoding: 'utf8'
+  })
+  const { status, output } = svn_checkout
+  if (status !== 0) {
+    throw new Error(output.join(''))
+  } else {
+    console.log(output.join(''))
+  }
+}
+
+module.exports = svnCoResource
 
 /**
- * 执行svn操作
  * @param project
  * @param commitMessage
  */
-function svnOps(project, commitMessage) {
-
+function svnUpdateRemote(project, commitMessage) {
   try {
     svnAddOrUpdate(project)
   } catch (e) {
-    console.log(e)
-    throw new Error('执行svn add/update 失败')
+    console.log('执行svn add/update 失败')
+    throw e
   }
   try {
     svnCommit(project, commitMessage)
   } catch (e) {
-    console.log(e)
-    throw new Error('执行svn commit 错误')
+    console.log('执行svn commit 错误')
+    throw e
   }
 }
 
 /**
  *
  * @param project
- * Todo: 回滚
  */
 function svnAddOrUpdate(project) {
-  const projectPath = `${process.cwd()}/temp/${project}`
+  const projectPath = `${tempDir}/${project}`
   const projectFiles = readdirSync(projectPath)
   projectFiles.forEach(item => {
     const update = spawnSync('svn', ['add', item], {
-      cwd: projectPath
+      cwd: projectPath,
+      encoding: 'utf8'
     })
-    let { stderr, stdout } = update
-    if (stderr && stderr.length) {
-      console.log(stderr.toString())
+    let { status, output } = update
+    if (status !== 0) {
       const add = spawnSync('svn', ['update', item], {
-        cwd: projectPath
+        cwd: projectPath,
+        encoding: 'utf8'
       })
-      stdout = add.stdout
-      stderr = add.stderr
-      if (stderr && stderr.length) {
-        console.log(stderr.toString())
+      let { status, output } = add
+      if (status !== 0) {
+        throw new Error(output.join(''))
       } else {
-        console.log(stdout.toString())
+        console.log(output.join(''))
       }
     } else {
-      console.log(stdout.toString())
+      console.log(output.join(''))
     }
   })
 }
 
 function svnCommit(project, commitMessage) {
-  console.log('开始执行svn commit -m ', commitMessage)
-  const projectPath = `${process.cwd()}/temp/${project}`
+  const projectPath = `${tempDir}/${project}`
   const svn_commit = spawnSync('svn', ['commit', '-m', commitMessage], {
-    cwd: projectPath
+    cwd: projectPath,
+    encoding: 'utf8'
   })
-  if (svn_commit.stderr.length) {
-    console.log(svn_commit.stderr.toString())
-    throw new Error(svn_commit.stderr.toString())
+  const { status, output } = svn_commit
+  if (status !== 0) {
+    throw new Error(output.join(''))
   } else {
-    console.log(svn_commit.stdout.toString())
+    console.log(output.join(''))
   }
 }
 
-module.exports = svnOps
+module.exports = {
+  svnCoResource,
+  svnUpdateRemote
+}
