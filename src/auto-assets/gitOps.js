@@ -41,9 +41,8 @@ function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
   const git_commit = spawnSync('git', ['commit', '-m', commitMessage], {
     cwd: process.cwd()
   })
-  console.log(git_commit)
-  if (git_commit.stderr && git_commit.length) {
-    throw Error(git_commit.stderr.toString())
+  if (git_commit.stderr && git_commit.stderr.length) {
+    // throw Error(git_commit.stderr.toString())
   } else if (git_commit.stdout && git_commit.stdout.toString().indexOf('nothing to commit, working tree clean') !== -1) {
     throw Error('nothing to commit, working tree clean')
   }
