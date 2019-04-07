@@ -8,22 +8,33 @@ const { spawnSync } = require('child_process')
  */
 function gitOps(commitMessage, branch) {
   console.log('开始上传文件到git')
-  gitAdd()
-  gitCommit(commitMessage)
   try {
-    // gitPush(branch)
-  } catch (e) {
-    console.log(e)
-    throw new Error('执行git push 错误')
+    gitAdd()
+  } catch (error) {
+    console.log('git add 操作失败')
+    throw error
+  }
+  try {
+    gitCommit(commitMessage)
+  } catch (error) {
+    console.log('git commit 操作失败')
+  }
+  try {
+    gitPush(branch)
+  } catch (error) {
+    console.log('git push 操作失败')
+    throw error
   }
 }
 function gitAdd() {
   console.log('执行git add')
   const git_add = spawnSync('git', ['add', '.'], {
-    cwd: process.cwd()
+    cwd: process.cwd(),
+    encoding: 'utf8'
   })
-  if (git_add.stderr && git_add.stderr.length) {
-    throw Error(git_add.stderr.toString())
+  const { status, output } = git_add
+  if (status !== 0) {
+    throw new Error(output.join(''))
   }
 }
 function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
@@ -44,7 +55,12 @@ function gitPush(branch = 'master') {
   const git_push = spawnSync('git', ['push', '-u', 'origin', branch], {
     cwd: process.cwd()
   })
-  console.log(git_push)
+  const { output, status } = git_push
+  if (status !== 0) {
+    throw new Error(output.join(''))
+  } else {
+    console.log(output.join(''))
+  }
 }
 
 module.exports = gitOps
