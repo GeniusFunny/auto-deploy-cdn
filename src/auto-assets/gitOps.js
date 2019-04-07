@@ -8,18 +8,8 @@ const { spawnSync } = require('child_process')
  */
 function gitOps(commitMessage, branch) {
   console.log('开始上传文件到git')
-  try {
-    gitAdd()
-  } catch (e) {
-    console.log(e)
-    throw new Error('执行git add 错误')
-  }
-  try {
-    gitCommit(commitMessage)
-  } catch (e) {
-    console.log(e)
-    throw new Error('执行git commit 错误')
-  }
+  gitAdd()
+  gitCommit(commitMessage)
   try {
     // gitPush(branch)
   } catch (e) {
@@ -43,12 +33,13 @@ function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
     cwd: process.cwd(),
     encoding: 'utf8'
   })
+  const { output, status } = git_commit
+  if (status !== 0) {
+    throw new Error(output.join(''))
+  } else {
+    console.log(output.join)('')
+  }
   console.log(git_commit.output.join(''))
-  // if (git_commit.stderr && git_commit.stderr.length) {
-  //   // throw Error(git_commit.stderr.toString())
-  // } else if (git_commit.stdout && git_commit.stdout.toString().indexOf('nothing to commit, working tree clean') !== -1) {
-  //   throw Error('nothing to commit, working tree clean')
-  // }
 }
 
 function gitPush(branch = 'master') {
