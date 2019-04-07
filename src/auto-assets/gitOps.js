@@ -22,7 +22,6 @@ function gitAdd() {
   const git_add = spawnSync('git', ['add', '.'], {
     cwd: process.cwd()
   })
-  console.log(git_add)
   if (git_add.stderr && git_add.stderr.length) {
     throw Error(git_add.stderr.toString())
   }
