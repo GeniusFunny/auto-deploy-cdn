@@ -37,7 +37,7 @@ function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
   if (status !== 0) {
     throw new Error(output.join(''))
   } else {
-    console.log(output.join)('')
+    console.log(output.join(''))
   }
   console.log(git_commit.output.join(''))
 }
