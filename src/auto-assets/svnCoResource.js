@@ -3,17 +3,16 @@ const { spawnSync } = require('child_process')
 /**
  * 拉取svn上的资源
  */
-function svnCoResource(remote) {
-  const temp = `${process.cwd()}/temp`
+function svnCoResource(remote, dir) {
   const svn_checkout = spawnSync('svn', ['checkout', remote], {
-    cwd: temp
+    cwd: dir,
+    encoding: 'utf8'
   })
-  const { stdout, stderr } = svn_checkout
-  if (stderr && stderr.length) {
-    console.log(stderr.toString())
-    throw new Error(`svn checkout ${remote} 失败`)
+  const { status, output } = svn_checkout
+  if (status !== 0) {
+    throw new Error(output.join(''))
   } else {
-    console.log(stdout.toString())
+    console.log(output.join(''))
   }
 }
 
