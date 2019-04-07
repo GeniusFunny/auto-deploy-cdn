@@ -43,7 +43,7 @@ function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
     cwd: process.cwd(),
     encoding: 'utf8'
   })
-  console.log(git_commit.output)
+  console.log(git_commit.output.toString())
   // if (git_commit.stderr && git_commit.stderr.length) {
   //   // throw Error(git_commit.stderr.toString())
   // } else if (git_commit.stdout && git_commit.stdout.toString().indexOf('nothing to commit, working tree clean') !== -1) {
