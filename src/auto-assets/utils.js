@@ -1,4 +1,4 @@
-const { unlinkSync, readdirSync, mkdirSync, rmdirSync, accessSync, constants } = require('fs')
+const { unlinkSync, readdirSync, mkdirSync, rmdirSync, accessSync, constants, statSync } = require('fs')
 const { spawnSync } = require('child_process')
 
 /**
