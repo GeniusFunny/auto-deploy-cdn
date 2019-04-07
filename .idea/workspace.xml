@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ce9ebb74-019b-459e-981f-b708f5b62630" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/deleteTemp.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto-assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto-assets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/mkdirTemp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/moveAssetsToTemp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/moveOthersFileToDist.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/svnCoResource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto-assets/svnCoResource.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/auto-assets/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+            <state relative-caret-position="378">
+              <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="56" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -66,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/auto-assets/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1624">
-              <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+            <state relative-caret-position="280">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -117,9 +111,10 @@
         <option value="$PROJECT_DIR$/src/auto-asserts/index.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/moveAssetsToTemp.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/svnOps.js" />
-        <option value="$PROJECT_DIR$/src/auto-assets/utils.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/svnCoResource.js" />
         <option value="$PROJECT_DIR$/test.js" />
+        <option value="$PROJECT_DIR$/src/auto-assets/utils.js" />
+        <option value="$PROJECT_DIR$/build/assets/css/index.css" />
         <option value="$PROJECT_DIR$/src/auto-assets/index.js" />
       </list>
     </option>
@@ -139,22 +134,6 @@
             <path>
               <item name="webpack-autocdn-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="webpack-autocdn-plugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webpack-autocdn-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webpack-autocdn-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webpack-autocdn-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webpack-autocdn-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="auto-assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webpack-autocdn-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webpack-autocdn-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="temp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webpack-autocdn-plugin" type="b2602c69:ProjectViewProjectNode" />
@@ -178,8 +157,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/build/assets" />
       <recent name="$PROJECT_DIR$/build" />
+      <recent name="$PROJECT_DIR$/build/assets" />
       <recent name="$PROJECT_DIR$/build/assets/image" />
       <recent name="$PROJECT_DIR$/src/auto-asserts" />
       <recent name="$PROJECT_DIR$/build/assets/image/image2/image3" />
@@ -211,12 +190,12 @@
       <workItem from="1554349394871" duration="1091000" />
       <workItem from="1554368399264" duration="4998000" />
       <workItem from="1554437746784" duration="10988000" />
-      <workItem from="1554636304521" duration="1152000" />
+      <workItem from="1554636304521" duration="1592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25753000" />
+    <option name="totallyTimeSpent" value="26193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -294,13 +273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto-assets/gitOps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/auto-assets/refreshCDN.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -312,13 +284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto-assets/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1624">
-          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -350,13 +315,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto-assets/gitOps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto-assets/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/assets/js/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/assets/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/yoj/css/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/auto-assets/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+        <state relative-caret-position="378">
+          <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="56" selection-end-column="3" />
         </state>
       </provider>
     </entry>
