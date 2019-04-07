@@ -32,6 +32,7 @@ function gitAdd() {
   const git_add = spawnSync('git', ['add', '.'], {
     cwd: process.cwd()
   })
+  console.log(git_add)
   if (git_add.stderr && git_add.stderr.length) {
     throw Error(git_add.stderr.toString())
   }
@@ -41,6 +42,7 @@ function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
   const git_commit = spawnSync('git', ['commit', '-m', commitMessage], {
     cwd: process.cwd()
   })
+  console.log(git_commit)
   if (git_commit.stderr && git_commit.stderr.length) {
     // throw Error(git_commit.stderr.toString())
   } else if (git_commit.stdout && git_commit.stdout.toString().indexOf('nothing to commit, working tree clean') !== -1) {
@@ -52,13 +54,7 @@ function gitPush(branch = 'master') {
   const git_push = spawnSync('git', ['push', '-u', 'origin', branch], {
     cwd: process.cwd()
   })
-  // console.log(git_push.stderr.toString())
-  console.log(git_push.stdout.toString())
-  if (git_push.stderr.length) {
-    // throw new Error(git_push.stderr.toString())
-  } else {
-    console.log(git_push.stdout.toString())
-  }
+  console.log(git_push)
 }
 
 module.exports = gitOps
