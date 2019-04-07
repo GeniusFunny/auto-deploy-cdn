@@ -52,7 +52,7 @@ function gitPush(branch = 'master') {
   const git_push = spawnSync('git', ['push', '-u', 'origin', branch], {
     cwd: process.cwd()
   })
-  console.log(git_push.stdout.toString() === git_push.stderr.toString())
+  console.log(git_push.stderr.toString())
   if (git_push.stderr.length) {
     // throw new Error(git_push.stderr.toString())
   } else {
