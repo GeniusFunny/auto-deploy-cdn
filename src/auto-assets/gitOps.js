@@ -1,11 +1,11 @@
 const { spawnSync } = require('child_process')
 /**
  *
- * @param commitMessage
  * @param branch
+ * @param commitMessage
  * 执行git操作
  */
-function gitOps(commitMessage, branch) {
+function gitOps(branch, commitMessage) {
   console.log('开始上传文件到git')
   try {
     gitAdd()

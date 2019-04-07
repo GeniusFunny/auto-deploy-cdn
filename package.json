@@ -1,7 +1,7 @@
 {
-  "name": "webpack-autocdn-plugin",
+  "name": "auto-deploy2cdn",
   "version": "0.0.1",
-  "description": "a webpack plugin for auto upload asserts to cdn",
+  "description": "a script for auto uploading asserts to cdn",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeniusFunny/webpack-autocdn-plugin.git"
+    "url": "git+https://github.com/GeniusFunny/auto-deploy2cdn.git"
   },
   "keywords": [
     "webpack",
@@ -19,7 +19,7 @@
   "author": "GeniusFunny",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GeniusFunny/webpack-autocdn-plugin/issues"
+    "url": "https://github.com/GeniusFunny/auto-deploy2cdn/issues"
   },
-  "homepage": "https://github.com/GeniusFunny/webpack-autocdn-plugin#readme"
+  "homepage": "https://github.com/GeniusFunny/auto-deploy2cdn#readme"
 }
