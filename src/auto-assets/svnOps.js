@@ -1,4 +1,5 @@
 const { spawnSync } = require('child_process')
+const colors = require('colors')
 const { readdirSync } = require('fs')
 const { tempDir } = require('./config')
 /**
@@ -11,9 +12,9 @@ function svnCoResource(remote) {
   })
   const { status, output } = svn_checkout
   if (status !== 0) {
-    throw new Error(output.join(''))
+    throw new Error(output.join('').red)
   } else {
-    console.log(output.join(''))
+    console.log(output.join('').blue)
   }
 }
 
@@ -27,13 +28,13 @@ function svnUpdateRemote(project, commitMessage) {
   try {
     svnAddOrUpdate(project)
   } catch (e) {
-    console.log('执行svn add/update 失败')
+    console.log('执行svn add/update 失败'.red)
     throw e
   }
   try {
     svnCommit(project, commitMessage)
   } catch (e) {
-    console.log('执行svn commit 错误')
+    console.log('执行svn commit 错误'.red)
     throw e
   }
 }
@@ -58,12 +59,12 @@ function svnAddOrUpdate(project) {
       })
       let { status, output } = update
       if (status !== 0) {
-        throw new Error(output.join(''))
+        throw new Error(output.join('').red)
       } else {
-        console.log(output.join(''))
+        console.log(output.join('').blue)
       }
     } else {
-      console.log(output.join(''))
+      console.log(output.join('').blue)
     }
   })
 }
@@ -76,9 +77,9 @@ function svnCommit(project, commitMessage) {
   })
   const { status, output } = svn_commit
   if (status !== 0) {
-    throw new Error(output.join(''))
+    throw new Error(output.join('').red)
   } else {
-    console.log(output.join(''))
+    console.log(output.join('').blue)
   }
 }
 

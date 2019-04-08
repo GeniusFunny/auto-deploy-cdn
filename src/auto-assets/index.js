@@ -1,9 +1,10 @@
 const readlineSync = require('readline-sync')
+const colors = require('colors')
 const { svnCoResource, svnUpdateRemote } = require('./svnOps')
 const gitOps = require('./gitOps')
 const { handleError1, handleError2 } = require('./handleError')
 const { deleteFileAndDirectory, mkdir, moveFiles, isCorrectType } = require('./utils')
-const { tempDir, buildDir, distDir} = require('./config')
+const { tempDir, buildDir, distDir } = require('./config')
 const refreshCDN = require('./refreshCDN')
 
 /**
@@ -32,20 +33,20 @@ function autoAssets(
   try {
     mkdir(tempDir)
   } catch (e) {
-    console.log('创建临时目录失败', e)
+    console.log('创建临时目录失败'.bgRed)
     throw e
   }
   try {
     svnCoResource(svnRemote)
   } catch (e) {
-    console.log('svn checkout 失败', e)
+    console.log('svn checkout 失败'.bgRed)
     handleError1()
     throw e
   }
   try {
     moveFiles(`${buildDir}/assets`, `${tempDir}/${svnProjectName}/assets`)
   } catch (e) {
-    console.log('移动静态资源到临时目录失败', e)
+    console.log('移动静态资源到临时目录失败'.bgRed)
     handleError1()
     throw e
   }
@@ -57,14 +58,14 @@ function autoAssets(
   try {
     svnUpdateRemote(svnProjectName, commitMessage)
   } catch (e) {
-    console.log('svn 更新失败', e)
+    console.log('svn 更新失败'.bgRed)
     handleError1()
     throw e
   }
   try {
     // deleteFileAndDirectory(tempDir)
   } catch (e) {
-    console.log('删除临时目录失败', e)
+    console.log('删除临时目录失败'.bgRed)
     handleError1()
     throw e
   }
@@ -73,42 +74,42 @@ function autoAssets(
     try {
       refreshCDN(svnDir, commitMessage)
     } catch (e) {
-      console.log('更新shared请求失败')
+      console.log('更新shared请求失败'.bgRed)
       throw e
     }
   }
   try {
     mkdir(distDir)
   } catch (e) {
-    console.log('创建dist目录失败', e)
+    console.log('创建dist目录失败'.bgRed)
     throw e
   }
   try {
     moveFiles(buildDir, distDir)
   } catch (e) {
-    console.log('移动剩余资源到dist失败', e)
+    console.log('移动剩余资源到dist失败'.bgRed)
     handleError2()
     throw e
   }
   try {
-    // deleteFileAndDirectory(buildDir)
-    // deleteFileAndDirectory(`${distDir}/assets`)
+    deleteFileAndDirectory(buildDir)
+    deleteFileAndDirectory(`${distDir}/assets`)
   } catch (e) {
-    console.log('删除build文件夹失败', e)
+    console.log('删除build文件夹失败'.bgRed)
     handleError2()
     throw e
   }
   if (autoGit) {
     let gitBranch
     try {
-      gitBranch = readlineSync.question('输入本次提交到的Git分支')
+      gitBranch = readlineSync.question('输入本次提交到的Git分支：')
     } catch (e) {
       throw e
     }
     try {
       gitOps(gitBranch, commitMessage)
     } catch (e) {
-      console.log('更新git仓库失败', e)
+      console.log('更新git仓库失败'.bgRed)
       handleError2()
       throw e
     }

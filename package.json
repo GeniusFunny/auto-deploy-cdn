@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/GeniusFunny/auto-deploy2cdn#readme",
   "dependencies": {
+    "colors": "^1.3.3",
     "readline-sync": "^1.4.9"
   }
 }

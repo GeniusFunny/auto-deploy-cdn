@@ -1,4 +1,5 @@
 const http = require('http')
+const colors = require('colors')
 const readlineSync = require('readline-sync')
 const queryString = require('querystring')
 /**
@@ -23,9 +24,9 @@ function refreshCDN(svnDir = 'ke', svnCommitMessage = '') {
   }
   const req = http.request(options, res => {
     if (res.statusCode === 302) {
-      console.log('部署资源已触发更新，5分钟后生效，请勿过早上线')
+      console.log('部署资源已触发更新，5分钟后生效，请勿过早上线'.green)
     } else {
-      throw new Error('触发更新失败, 请检查用户名与密码是否正确')
+      throw new Error('触发更新失败, 请检查用户名与密码是否正确'.red)
     }
   })
   req.on('error', e =>{

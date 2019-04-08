@@ -1,4 +1,5 @@
 const { spawnSync } = require('child_process')
+const colors = require('colors')
 /**
  *
  * @param branch
@@ -6,23 +7,23 @@ const { spawnSync } = require('child_process')
  * 执行git操作
  */
 function gitOps(branch, commitMessage) {
-  console.log('开始上传文件到git')
+  console.log('开始上传文件到git'.green)
   try {
     gitAdd()
   } catch (e) {
-    console.log('git add 操作失败')
+    console.log('git add 操作失败'.red)
     throw e
   }
   try {
     gitCommit(commitMessage)
   } catch (e) {
-    console.log('git commit 操作失败')
+    console.log('git commit 操作失败'.red)
     throw e
   }
   try {
     gitPush(branch)
   } catch (e) {
-    console.log('git push 操作失败')
+    console.log('git push 操作失败'.red)
     throw e
   }
 }
@@ -37,16 +38,16 @@ function gitAdd() {
   }
 }
 function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
-  console.log('执行git commit')
+  console.log('执行git commit'.green)
   const git_commit = spawnSync('git', ['commit', '-m', commitMessage], {
     cwd: process.cwd(),
     encoding: 'utf8'
   })
   const { output, status } = git_commit
   if (status !== 0) {
-    throw new Error(output.join(''))
+    throw new Error(output.join('').red)
   } else {
-    console.log(output.join(''))
+    console.log(output.join('').blue)
   }
 }
 
@@ -56,9 +57,9 @@ function gitPush(branch = 'master') {
   })
   const { output, status } = git_push
   if (status !== 0) {
-    throw new Error(output.join(''))
+    throw new Error(output.join('').red)
   } else {
-    console.log(output.join(''))
+    console.log(output.join('').blue)
   }
 }
 
