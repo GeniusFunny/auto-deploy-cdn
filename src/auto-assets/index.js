@@ -1,3 +1,4 @@
+const readlineSync = require('readline-sync')
 const { svnCoResource, svnUpdateRemote } = require('./svnOps')
 const gitOps = require('./gitOps')
 const { handleError1, handleError2 } = require('./handleError')
@@ -9,39 +10,25 @@ const refreshCDN = require('./refreshCDN')
  *
  * @param svnRemote  svn远程仓库地址
  * @param svnProjectName svn仓库名字
- * @param svnCommitMessage 本次svn提交信息
- * @param gitBranch git分支，默认master
- * @param gitCommitMessage 本次git提交信息
  * @param autoGit 是否自动更新git仓库
  * @param autoRefresh 是否自动触发CDN更新
- * @param ldap 用户名
- * @param password 密码
  * @param svnDir svn二级目录
  */
 function autoAssets(
   {
     svnRemote,
     svnProjectName,
-    svnCommitMessage,
-    gitBranch,
-    gitCommitMessage = svnCommitMessage,
     autoGit = true,
     autoRefresh = true,
-    ldap,
-    password,
     svnDir
   }
   ) {
   isCorrectType('svnRemote', svnRemote, 'string')
-  isCorrectType('svnProject', svnRemote, 'string')
-  isCorrectType('svnCommitMessage', svnCommitMessage, 'string')
-  isCorrectType('gitBranch', gitBranch, 'string')
-  isCorrectType('gitCommitMessage', gitCommitMessage, 'string')
+  isCorrectType('svnProject', svnProjectName, 'string')
   isCorrectType('autoGit', autoGit, 'boolean')
-  isCorrectType('ldap', ldap, 'string')
-  isCorrectType('password', password, 'string')
   isCorrectType('svnDir', svnDir, 'string')
   isCorrectType('autoRefresh', autoRefresh, 'boolean')
+  let commitMessage = ''
   try {
     mkdir(tempDir)
   } catch (e) {
@@ -56,14 +43,19 @@ function autoAssets(
     throw e
   }
   try {
-    moveFiles(`${buildDir}/assets`, `${tempDir}/${svnProjectName}`)
+    moveFiles(`${buildDir}/assets`, `${tempDir}/${svnProjectName}/assets`)
   } catch (e) {
     console.log('移动静态资源到临时目录失败', e)
     handleError1()
     throw e
   }
   try {
-    svnUpdateRemote(svnProjectName, svnCommitMessage)
+    commitMessage = readlineSync.question('输入本次commit信息：')
+  } catch (e) {
+    throw e
+  }
+  try {
+    svnUpdateRemote(svnProjectName, commitMessage)
   } catch (e) {
     console.log('svn 更新失败', e)
     handleError1()
@@ -79,7 +71,7 @@ function autoAssets(
   console.log('资源已部署到CDN')
   if (autoRefresh) {
     try {
-      refreshCDN(ldap, password, svnDir, svnCommitMessage)
+      refreshCDN(svnDir, commitMessage)
     } catch (e) {
       console.log('更新shared请求失败')
       throw e
@@ -107,8 +99,14 @@ function autoAssets(
     throw e
   }
   if (autoGit) {
+    let gitBranch
     try {
-      gitOps(gitBranch, gitCommitMessage)
+      gitBranch = readlineSync.question('输入本次提交到的Git分支')
+    } catch (e) {
+      throw e
+    }
+    try {
+      gitOps(gitBranch, commitMessage)
     } catch (e) {
       console.log('更新git仓库失败', e)
       handleError2()

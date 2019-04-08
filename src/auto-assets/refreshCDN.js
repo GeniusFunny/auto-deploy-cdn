@@ -1,9 +1,12 @@
 const http = require('http')
+const readlineSync = require('readline-sync')
 const queryString = require('querystring')
 /**
  * 资源部署到CDN后，需要手动使其生效
  */
-function refreshCDN(username, password, svnDir = 'ke', svnCommitMessage = '') {
+function refreshCDN(svnDir = 'ke', svnCommitMessage = '') {
+  const username = readlineSync.question('username: ')
+  const password = readlineSync.question('password: ')
   const postData = queryString.stringify({
     request_log: svnDir,
     request_submit: svnCommitMessage
@@ -19,9 +22,10 @@ function refreshCDN(username, password, svnDir = 'ke', svnCommitMessage = '') {
     }
   }
   const req = http.request(options, res => {
-    console.log('状态码:', res.statusCode)
     if (res.statusCode === 302) {
       console.log('部署资源已触发更新，5分钟后生效，请勿过早上线')
+    } else {
+      throw new Error('触发更新失败')
     }
   })
   req.on('error', e =>{
