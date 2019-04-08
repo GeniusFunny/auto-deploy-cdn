@@ -4,5 +4,5 @@ autoAssets({
   svnProjectName: 'yoj',
   svnRemote: 'https://corp.youdao.com/svn/ydstatic/ke/yoj/',
   autoGit: true,
-  autoRefresh: true
+  autoRefresh: false
 })

@@ -62,7 +62,7 @@ function autoAssets(
     throw e
   }
   try {
-    deleteFileAndDirectory(tempDir)
+    // deleteFileAndDirectory(tempDir)
   } catch (e) {
     console.log('删除临时目录失败', e)
     handleError1()
@@ -91,8 +91,8 @@ function autoAssets(
     throw e
   }
   try {
-    deleteFileAndDirectory(buildDir)
-    deleteFileAndDirectory(`${distDir}/assets`)
+    // deleteFileAndDirectory(buildDir)
+    // deleteFileAndDirectory(`${distDir}/assets`)
   } catch (e) {
     console.log('删除build文件夹失败', e)
     handleError2()
