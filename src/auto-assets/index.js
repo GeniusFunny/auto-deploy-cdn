@@ -3,6 +3,7 @@ const gitOps = require('./gitOps')
 const { handleError1, handleError2 } = require('./handleError')
 const { deleteFileAndDirectory, mkdir, moveFiles, isCorrectType } = require('./utils')
 const { tempDir, buildDir, distDir} = require('./config')
+const refreshCDN = require('./refreshCDN')
 
 /**
  *
@@ -12,6 +13,10 @@ const { tempDir, buildDir, distDir} = require('./config')
  * @param gitBranch git分支，默认master
  * @param gitCommitMessage 本次git提交信息
  * @param autoGit 是否自动更新git仓库
+ * @param autoRefresh 是否自动触发CDN更新
+ * @param ldap 用户名
+ * @param password 密码
+ * @param svnDir svn二级目录
  */
 function autoAssets(
   {
@@ -20,7 +25,11 @@ function autoAssets(
     svnCommitMessage,
     gitBranch,
     gitCommitMessage = svnCommitMessage,
-    autoGit = true
+    autoGit = true,
+    autoRefresh = true,
+    ldap,
+    password,
+    svnDir
   }
   ) {
   isCorrectType('svnRemote', svnRemote, 'string')
@@ -29,6 +38,10 @@ function autoAssets(
   isCorrectType('gitBranch', gitBranch, 'string')
   isCorrectType('gitCommitMessage', gitCommitMessage, 'string')
   isCorrectType('autoGit', autoGit, 'boolean')
+  isCorrectType('ldap', ldap, 'string')
+  isCorrectType('password', password, 'string')
+  isCorrectType('svnDir', svnDir, 'string')
+  isCorrectType('autoRefresh', autoRefresh, 'boolean')
   try {
     mkdir(tempDir)
   } catch (e) {
@@ -64,6 +77,14 @@ function autoAssets(
     throw e
   }
   console.log('资源已部署到CDN')
+  if (autoRefresh) {
+    try {
+      refreshCDN(ldap, password, svnDir, svnCommitMessage)
+    } catch (e) {
+      console.log('更新shared请求失败')
+      throw e
+    }
+  }
   try {
     mkdir(distDir)
   } catch (e) {
