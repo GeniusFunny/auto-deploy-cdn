@@ -69,7 +69,7 @@ function autoAssets(
     handleError1()
     throw e
   }
-  console.log('资源已部署到CDN')
+  console.log('资源已部署到CDN'.bgGreen)
   if (autoRefresh) {
     try {
       refreshCDN(svnDir, commitMessage)
@@ -92,8 +92,8 @@ function autoAssets(
     throw e
   }
   try {
-    deleteFileAndDirectory(buildDir)
-    deleteFileAndDirectory(`${distDir}/assets`)
+    // deleteFileAndDirectory(buildDir)
+    // deleteFileAndDirectory(`${distDir}/assets`)
   } catch (e) {
     console.log('删除build文件夹失败'.bgRed)
     handleError2()

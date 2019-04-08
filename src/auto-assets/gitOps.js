@@ -38,7 +38,7 @@ function gitAdd() {
   }
 }
 function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
-  console.log('执行git commit'.green)
+  console.log('执行git commit'.yellow)
   const git_commit = spawnSync('git', ['commit', '-m', commitMessage], {
     cwd: process.cwd(),
     encoding: 'utf8'

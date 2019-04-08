@@ -7,16 +7,13 @@ const { spawnSync } = require('child_process')
  * @param targetPath
  */
 function moveFiles(sourcePath, targetPath) {
-  const resource = readdirSync(sourcePath)
-  resource.map(file => `${sourcePath}/${file}`).forEach(file => {
-    const moveFiles = spawnSync('cp', ['-r', file, targetPath], {
-      encoding: 'utf8'
-    })
-    const { status, output} = moveFiles
-    if (status !== 0) {
-      throw new Error(output.join(''))
-    }
+  const moveFiles = spawnSync('cp', ['-r', sourcePath, targetPath], {
+    encoding: 'utf8'
   })
+  const { status, output} = moveFiles
+  if (status !== 0) {
+    throw new Error(output.join(''))
+  }
 }
 /**
  * 创建目录

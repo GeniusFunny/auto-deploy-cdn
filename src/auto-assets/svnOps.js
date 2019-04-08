@@ -59,12 +59,12 @@ function svnAddOrUpdate(project) {
       })
       let { status, output } = update
       if (status !== 0) {
-        throw new Error(output.join('').red)
+        throw new Error(output.join(''))
       } else {
-        console.log(output.join('').green)
+        console.log(output.join(''))
       }
     } else {
-      console.log(output.join('').green)
+      console.log(output.join(''))
     }
   })
 }
@@ -77,9 +77,9 @@ function svnCommit(project, commitMessage) {
   })
   const { status, output } = svn_commit
   if (status !== 0) {
-    throw new Error(output.join('').red)
+    throw new Error(output.join(''))
   } else {
-    console.log(output.join('').green)
+    console.log(output.join(''))
   }
 }
 
