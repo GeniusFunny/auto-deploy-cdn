@@ -46,17 +46,17 @@ function svnAddOrUpdate(project) {
   const projectPath = `${tempDir}/${project}`
   const projectFiles = readdirSync(projectPath)
   projectFiles.forEach(item => {
-    const update = spawnSync('svn', ['add', item], {
+    const add = spawnSync('svn', ['add', item, '--no-ignore', '--force'], {
       cwd: projectPath,
       encoding: 'utf8'
     })
-    let { status, output } = update
+    let { status, output } = add
     if (status !== 0) {
-      const add = spawnSync('svn', ['update', item], {
+      const update = spawnSync('svn', ['update', item], {
         cwd: projectPath,
         encoding: 'utf8'
       })
-      let { status, output } = add
+      let { status, output } = update
       if (status !== 0) {
         throw new Error(output.join(''))
       } else {
