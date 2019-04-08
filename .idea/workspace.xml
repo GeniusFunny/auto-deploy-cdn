@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce9ebb74-019b-459e-981f-b708f5b62630" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/js/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/media/index.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto-assets/gitOps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto-assets/gitOps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto-assets/handleError.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto-assets/handleError.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto-assets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/refreshCDN.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto-assets/refreshCDN.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto-assets/svnOps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto-assets/svnOps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/entries" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/format" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/3c/3c4fc8e6e6b94643f5968c4f2699aea7790b7fc4.svn-base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/4b/4b3f6dc91928b90d1ce067b4e54bccf0cef0150b.svn-base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/98/98e37b57524dd936cb1d58cc6522f69e14dd3599.svn-base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/d3/d3800298fc1a0f729f49b1f1ab2b6974017249b2.svn-base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/da/da39a3ee5e6b4b0d3255bfef95601890afd80709.svn-base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/wc.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/wc.db-journal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/js/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/media/index.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/comment.min.22766d87.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/raven.min.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/auto-assets/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-558">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="-2656">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -68,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/auto-assets/gitOps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="32" />
+            <state relative-caret-position="1708">
+              <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -83,20 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/auto-assets/svnOps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1224">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="32" />
+            <state relative-caret-position="368">
+              <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/auto-assets/handleError.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+            <state relative-caret-position="144">
+              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -161,10 +136,10 @@
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/index.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/config.js" />
+        <option value="$PROJECT_DIR$/src/auto-assets/refreshCDN.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/gitOps.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/svnOps.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/handleError.js" />
-        <option value="$PROJECT_DIR$/src/auto-assets/refreshCDN.js" />
       </list>
     </option>
   </component>
@@ -250,12 +225,12 @@
       <workItem from="1554437746784" duration="10988000" />
       <workItem from="1554636304521" duration="4631000" />
       <workItem from="1554641588049" duration="494000" />
-      <workItem from="1554703559982" duration="6048000" />
+      <workItem from="1554703559982" duration="6276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35774000" />
+    <option name="totallyTimeSpent" value="36002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -373,30 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto-assets/config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto-assets/gitOps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto-assets/handleError.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto-assets/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-558">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/auto-assets/refreshCDN.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -404,10 +355,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto-assets/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2656">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto-assets/config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto-assets/gitOps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1708">
+          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/auto-assets/svnOps.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="32" />
+        <state relative-caret-position="368">
+          <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto-assets/handleError.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
         </state>
       </provider>
     </entry>

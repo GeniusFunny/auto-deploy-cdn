@@ -14,7 +14,7 @@ function handleError1() {
 }
 function handleError2() {
   try {
-    console.log('任务失败，删除创建的dist目录'.bgGreen)
+    console.log('任务失败，删除创建的dist目录'.bgRed)
     deleteFileAndDirectory(distDir)
   } catch (e) {
     console.log('删除创建的dist目录也失败了...'.bgRed)

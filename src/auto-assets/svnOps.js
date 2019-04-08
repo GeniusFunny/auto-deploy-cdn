@@ -14,7 +14,7 @@ function svnCoResource(remote) {
   if (status !== 0) {
     throw new Error(output.join('').red)
   } else {
-    console.log(output.join('').blue)
+    console.log(output.join('').green)
   }
 }
 
@@ -61,10 +61,10 @@ function svnAddOrUpdate(project) {
       if (status !== 0) {
         throw new Error(output.join('').red)
       } else {
-        console.log(output.join('').blue)
+        console.log(output.join('').green)
       }
     } else {
-      console.log(output.join('').blue)
+      console.log(output.join('').green)
     }
   })
 }
@@ -79,7 +79,7 @@ function svnCommit(project, commitMessage) {
   if (status !== 0) {
     throw new Error(output.join('').red)
   } else {
-    console.log(output.join('').blue)
+    console.log(output.join('').green)
   }
 }
 

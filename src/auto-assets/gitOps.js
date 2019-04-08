@@ -7,7 +7,7 @@ const colors = require('colors')
  * 执行git操作
  */
 function gitOps(branch, commitMessage) {
-  console.log('开始上传文件到git'.green)
+  console.log('开始上传文件到git'.yellow)
   try {
     gitAdd()
   } catch (e) {
@@ -47,7 +47,7 @@ function gitCommit(commitMessage = Math.floor(Math.random() * Date.now())) {
   if (status !== 0) {
     throw new Error(output.join('').red)
   } else {
-    console.log(output.join('').blue)
+    console.log(output.join('').green)
   }
 }
 
@@ -59,7 +59,7 @@ function gitPush(branch = 'master') {
   if (status !== 0) {
     throw new Error(output.join('').red)
   } else {
-    console.log(output.join('').blue)
+    console.log(output.join('').green)
   }
 }
 
