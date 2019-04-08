@@ -45,28 +45,29 @@ function svnUpdateRemote(project, commitMessage) {
  */
 function svnAddOrUpdate(project) {
   const projectPath = `${tempDir}/${project}`
-  const projectFiles = readdirSync(projectPath)
-  projectFiles.forEach(item => {
-    const add = spawnSync('svn', ['add', item, '--no-ignore', '--force'], {
+  // const projectFiles = readdirSync(projectPath)
+  const add = spawnSync('svn', ['add', '.', '--no-ignore', '--force'], {
+    cwd: projectPath,
+    encoding: 'utf8'
+  })
+  let { status, output } = add
+  if (status !== 0) {
+    const update = spawnSync('svn', ['update', '.'], {
       cwd: projectPath,
       encoding: 'utf8'
     })
-    let { status, output } = add
+    let { status, output } = update
     if (status !== 0) {
-      const update = spawnSync('svn', ['update', item], {
-        cwd: projectPath,
-        encoding: 'utf8'
-      })
-      let { status, output } = update
-      if (status !== 0) {
-        throw new Error(output.join(''))
-      } else {
-        console.log(output.join(''))
-      }
+      throw new Error(output.join(''))
     } else {
       console.log(output.join(''))
     }
-  })
+  } else {
+    console.log(output.join(''))
+  }
+  // projectFiles.forEach(item => {
+  //
+  // })
 }
 
 function svnCommit(project, commitMessage) {

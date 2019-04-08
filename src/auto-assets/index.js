@@ -1,4 +1,6 @@
 const readlineSync = require('readline-sync')
+const { readdirSync } = require('fs')
+const { spawnSync } = require('child_process')
 const colors = require('colors')
 const { svnCoResource, svnUpdateRemote } = require('./svnOps')
 const gitOps = require('./gitOps')
@@ -44,7 +46,7 @@ function autoAssets(
     throw e
   }
   try {
-    moveFiles(`${buildDir}/assets`, `${tempDir}/${svnProjectName}/assets`)
+    moveFiles(`${buildDir}/assets`, `${tempDir}/${svnProjectName}`)
   } catch (e) {
     console.log('移动静态资源到临时目录失败'.bgRed)
     handleError1()
@@ -63,13 +65,13 @@ function autoAssets(
     throw e
   }
   try {
-    // deleteFileAndDirectory(tempDir)
+    deleteFileAndDirectory(tempDir)
   } catch (e) {
     console.log('删除临时目录失败'.bgRed)
     handleError1()
     throw e
   }
-  console.log('资源已部署到CDN'.bgGreen)
+  console.log('资源已部署到CDN'.green)
   if (autoRefresh) {
     try {
       refreshCDN(svnDir, commitMessage)
@@ -85,15 +87,24 @@ function autoAssets(
     throw e
   }
   try {
-    moveFiles(buildDir, distDir)
+    const resource = readdirSync(buildDir)
+    resource.map(file => `${buildDir}/${file}`).forEach(file => {
+      const moveFiles = spawnSync('cp', ['-r', file, distDir], {
+        encoding: 'utf8'
+      })
+      const { status, output} = moveFiles
+      if (status !== 0) {
+        throw new Error(output.join(''))
+      }
+    })
   } catch (e) {
     console.log('移动剩余资源到dist失败'.bgRed)
     handleError2()
     throw e
   }
   try {
-    // deleteFileAndDirectory(buildDir)
-    // deleteFileAndDirectory(`${distDir}/assets`)
+    deleteFileAndDirectory(buildDir)
+    deleteFileAndDirectory(`${distDir}/assets`)
   } catch (e) {
     console.log('删除build文件夹失败'.bgRed)
     handleError2()

@@ -3,26 +3,80 @@
   <component name="ChangeListManager">
     <list default="true" id="ce9ebb74-019b-459e-981f-b708f5b62630" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/gitOps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto-assets/gitOps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/1.435f25ee.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/1.435f25ee.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/main.37d71ce3.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/main.37d71ce3.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/1.1355cd46.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/1.1355cd46.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/main.03e67efa.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/main.03e67efa.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/runtime~main.499a23b4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/runtime~main.499a23b4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/media/ios-keypad.2632b430.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/media/ios-pulse-strong.bd392feb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/media/logo.56e47f94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/media/rank.8793d276.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.ad2b2336cf24e13c4c7c9dab7c1568c6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto-assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto-assets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auto-assets/refreshCDN.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto-assets/refreshCDN.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto-assets/svnOps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto-assets/svnOps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto-assets/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/entries" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/format" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/30/301b0e2755813f9e565a60f96fc77e9be4948733.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/37/375f7df476f38269895313a0a243bad9b4babab9.svn-base" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/3c/3c4fc8e6e6b94643f5968c4f2699aea7790b7fc4.svn-base" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/4b/4b3f6dc91928b90d1ce067b4e54bccf0cef0150b.svn-base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/98/98e37b57524dd936cb1d58cc6522f69e14dd3599.svn-base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/d3/d3800298fc1a0f729f49b1f1ab2b6974017249b2.svn-base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/da/da39a3ee5e6b4b0d3255bfef95601890afd80709.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/68/68443f9ce8ba0100f5aae3e77c3b39750b9b2127.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/77/77397b0ab4eec6504c80e28feb6221b540f33d1f.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/81/816ff7d07c2b43ee25289508ec0657f34f2cd5a9.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/a8/a83c82fd1c39338a592dfa3d37f7d7c7e8679464.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/b6/b6159e140666a8210246ebf8e1e609c6926e725f.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/bf/bfdd74cfec5b02544054c2f1106bb7633929fc4a.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/c7/c7507632f7facf25dddcd7a7234888d1e11cf67f.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/ce/cedc519503c63ed9e74abd3d29db03c5c0212c08.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/d6/d6a8157b442de93aec0b5a04fe942ce9d05e7724.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/d9/d91104e1e8ff3dd25e2bb0859a8795317eaecf48.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/fe/fe9f4dc7a5f0756fa86b51373c4b9f098fac2066.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/pristine/ff/ff7136481177e1b4751e8c67011f7d26e98ef535.svn-base" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/wc.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/yoj/.svn/wc.db-journal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/js/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/media/index.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/1.435f25ee.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/1.435f25ee.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/css/1.435f25ee.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/css/1.435f25ee.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/css/main.37d71ce3.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/css/main.37d71ce3.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/js/1.1355cd46.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/js/1.1355cd46.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/js/main.03e67efa.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/js/main.03e67efa.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/js/runtime~main.499a23b4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/js/runtime~main.499a23b4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/media/ios-keypad.2632b430.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/media/ios-pulse-strong.bd392feb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/media/logo.56e47f94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/assets/media/rank.8793d276.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/js/1.1355cd46.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/js/1.1355cd46.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/js/main.03e67efa.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/js/main.03e67efa.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/js/runtime~main.499a23b4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/js/runtime~main.499a23b4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/main.37d71ce3.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/main.37d71ce3.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/media/ios-keypad.2632b430.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/media/ios-pulse-strong.bd392feb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/media/logo.56e47f94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yoj/assets/media/rank.8793d276.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/yoj/comment.min.22766d87.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/yoj/js/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/yoj/raven.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,11 +89,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/auto-assets/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="91" column="11" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+            <state relative-caret-position="1379">
+              <caret line="104" column="2" selection-start-line="104" selection-start-column="2" selection-end-line="111" selection-end-column="3" />
+              <folding>
+                <element signature="e#1490#1546#0" />
+                <element signature="e#1634#1675#0" />
+                <element signature="e#1809#1942#0" />
+                <element signature="e#2366#2640#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,53 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto-assets/gitOps.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1120">
-              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto-assets/refreshCDN.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto-assets/svnOps.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1708">
-              <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto-assets/handleError.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/auto-assets/utils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+            <state relative-caret-position="140">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -110,7 +125,9 @@
       <find>process</find>
       <find>console.log</find>
       <find>readLineSync</find>
+      <find>assets</find>
       <find>delete</find>
+      <find>bg</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/build/assets</dir>
@@ -150,14 +167,14 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/build/assets/js/index.js" />
-        <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/config.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/handleError.js" />
-        <option value="$PROJECT_DIR$/src/auto-assets/refreshCDN.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/gitOps.js" />
-        <option value="$PROJECT_DIR$/src/auto-assets/svnOps.js" />
-        <option value="$PROJECT_DIR$/src/auto-assets/index.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/utils.js" />
+        <option value="$PROJECT_DIR$/src/auto-assets/svnOps.js" />
+        <option value="$PROJECT_DIR$/test.js" />
+        <option value="$PROJECT_DIR$/src/auto-assets/refreshCDN.js" />
+        <option value="$PROJECT_DIR$/src/auto-assets/index.js" />
       </list>
     </option>
   </component>
@@ -178,11 +195,6 @@
             <path>
               <item name="auto-deploy2cdn" type="b2602c69:ProjectViewProjectNode" />
               <item name="auto-deploy2cdn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto-deploy2cdn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto-deploy2cdn" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,18 +250,19 @@
       <workItem from="1554636304521" duration="4631000" />
       <workItem from="1554641588049" duration="494000" />
       <workItem from="1554703559982" duration="6620000" />
-      <workItem from="1554712217932" duration="277000" />
+      <workItem from="1554712217932" duration="931000" />
+      <workItem from="1554713212725" duration="6000" />
+      <workItem from="1554713746348" duration="470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36623000" />
+    <option name="totallyTimeSpent" value="37753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26609442" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2732475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -276,6 +289,34 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26609442" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="DB Browser" order="3" />
+      <window_info id="Project Explorer" order="4" />
+      <window_info id="Job Explorer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Console" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="DB Execution Console" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32961586" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="14" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -319,7 +360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/assets/js/index.js" />
     <entry file="file://$PROJECT_DIR$/build/assets/media/index.txt" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -331,55 +371,62 @@
     <entry file="file://$PROJECT_DIR$/build/assets/js/test.js" />
     <entry file="file://$PROJECT_DIR$/build/assets/css/index.css" />
     <entry file="file://$PROJECT_DIR$/build/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/auto-assets/index.js">
+    <entry file="file://$PROJECT_DIR$/build/assets/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/auto-assets/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="91" column="11" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+        <state relative-caret-position="-383">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto-assets/handleError.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto-assets/svnOps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto-assets/refreshCDN.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto-assets/gitOps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/auto-assets/config.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto-assets/gitOps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto-assets/refreshCDN.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto-assets/svnOps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1708">
-          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto-assets/handleError.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        <state relative-caret-position="140">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto-assets/utils.js">
+    <entry file="file://$PROJECT_DIR$/src/auto-assets/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        <state relative-caret-position="1379">
+          <caret line="104" column="2" selection-start-line="104" selection-start-column="2" selection-end-line="111" selection-end-column="3" />
+          <folding>
+            <element signature="e#1490#1546#0" />
+            <element signature="e#1634#1675#0" />
+            <element signature="e#1809#1942#0" />
+            <element signature="e#2366#2640#0" />
+          </folding>
         </state>
       </provider>
     </entry>
