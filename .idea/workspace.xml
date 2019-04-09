@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce9ebb74-019b-459e-981f-b708f5b62630" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build1/assets/js/1.1355cd46.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build1/assets/js/1.1355cd46.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build1/assets/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy-css-js/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/gitOps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy-css-js/gitOps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/handleError.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy-css-js/handleError.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy-css-js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/refreshCDN.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy-css-js/refreshCDN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/svnOps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy-css-js/svnOps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto-assets/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy-css-js/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deploy-css-js/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy-css-js/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deploy-css-js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy-css-js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deploy-css-js/refreshCDN.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy-css-js/refreshCDN.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,11 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/deploy-css-js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1956">
-              <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
-              <folding>
-                <element signature="e#2778#2843#0" />
-              </folding>
+            <state relative-caret-position="2561">
+              <caret line="101" column="20" lean-forward="true" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -41,17 +31,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/deploy-css-js/refreshCDN.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+            <state relative-caret-position="476">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/deploy-css-js/config.js">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+            <state relative-caret-position="84">
+              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -60,16 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/deploy-css-js/gitOps.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="56">
-              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/deploy-css-js/handleError.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-80">
-              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -95,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="252">
+              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -164,9 +145,10 @@
         <option value="$PROJECT_DIR$/build1/index.js" />
         <option value="$PROJECT_DIR$/build1/assets/js/index.js" />
         <option value="$PROJECT_DIR$/src/auto-assets/index.js" />
-        <option value="$PROJECT_DIR$/src/deploy-css-js/config.js" />
         <option value="$PROJECT_DIR$/src/deploy-css-js/gitOps.js" />
+        <option value="$PROJECT_DIR$/src/deploy-css-js/config.js" />
         <option value="$PROJECT_DIR$/src/deploy-css-js/index.js" />
+        <option value="$PROJECT_DIR$/src/deploy-css-js/refreshCDN.js" />
         <option value="$PROJECT_DIR$/test.js" />
       </list>
     </option>
@@ -258,18 +240,20 @@
       <workItem from="1554713212725" duration="6000" />
       <workItem from="1554713746348" duration="470000" />
       <workItem from="1554730755515" duration="507000" />
-      <workItem from="1554791466640" duration="11150000" />
+      <workItem from="1554791466640" duration="11199000" />
+      <workItem from="1554809054144" duration="66000" />
+      <workItem from="1554811431733" duration="703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49410000" />
+    <option name="totallyTimeSpent" value="50228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28040057" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28755364" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -288,7 +272,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32961586" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -368,82 +352,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/assets/media/index.txt" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/assets/js/test.js" />
     <entry file="file://$PROJECT_DIR$/build/assets/css/index.css" />
     <entry file="file://$PROJECT_DIR$/build1/index.html" />
     <entry file="file://$PROJECT_DIR$/build/assets/js/index.js" />
-    <entry file="file://$PROJECT_DIR$/build/a.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/a.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/what/b.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/what/b.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/a.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/what/b.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/test/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/what/inner/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build1/assets/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/deploy-css-js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1956">
-          <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
-          <folding>
-            <element signature="e#2778#2843#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/deploy-css-js/refreshCDN.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/deploy-css-js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/a.js" />
+    <entry file="file://$PROJECT_DIR$/build/a.css" />
+    <entry file="file://$PROJECT_DIR$/build/what/b.js" />
+    <entry file="file://$PROJECT_DIR$/build/what/b.css" />
+    <entry file="file://$PROJECT_DIR$/build/a.html" />
+    <entry file="file://$PROJECT_DIR$/build/what/b.html" />
+    <entry file="file://$PROJECT_DIR$/build/test/index.html" />
+    <entry file="file://$PROJECT_DIR$/build/what/inner/index.js" />
+    <entry file="file://$PROJECT_DIR$/build1/assets/js/index.js" />
     <entry file="file://$PROJECT_DIR$/src/deploy-css-js/gitOps.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/deploy-css-js/handleError.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
+        <state relative-caret-position="56">
           <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
         </state>
       </provider>
@@ -462,10 +393,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deploy-css-js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deploy-css-js/refreshCDN.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deploy-css-js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2561">
+          <caret line="101" column="20" lean-forward="true" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="252">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>

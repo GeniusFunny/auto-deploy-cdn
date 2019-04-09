@@ -6,10 +6,13 @@ const { handleError1, handleError2 } = require('./handleError')
 const { deleteFileAndDirectory, mkdir, moveFiles, isCorrectType, include, exclude } = require('./utils')
 const { tempDir } = require('./config')
 const refreshCDN = require('./refreshCDN')
+
 /**
  *
  * @param svnRemote  svn远程仓库地址
  * @param svnProjectName svn远程仓库名字
+ * @param refreshHost 刷新CDN的域名
+ * @param refreshPath 刷新CDN的路径
  * @param svnDir svn二级目录
  * @param autoGit 是否自动执行Git更新操作
  * @param autoRefresh 是否自动触发CDN生效操作
@@ -28,9 +31,11 @@ function autoAssets(
     buildDir = 'build',
     distDir = 'dist',
     assetsDir = buildDir,
+    refreshHost,
+    refreshPath,
     svnDir
   }
-  ) {
+) {
   const cwd = process.cwd()
 
   isCorrectType('svnRemote', svnRemote, 'string')
@@ -95,8 +100,10 @@ function autoAssets(
   }
   console.log('资源已部署到CDN'.green)
   if (autoRefresh) {
+    isCorrectType('refreshHost', refreshHost, 'string')
+    isCorrectType('refreshPath', refreshPath, 'string')
     try {
-      refreshCDN(svnDir, commitMessage)
+      refreshCDN(svnDir, commitMessage, refreshHost, refreshHost)
     } catch (e) {
       console.log('更新shared请求失败'.bgRed)
       throw e

@@ -3,6 +3,4 @@ const tempDir = `${cwd}/temp`
 
 module.exports = {
   tempDir,
-  buildDir,
-  distDir
 }

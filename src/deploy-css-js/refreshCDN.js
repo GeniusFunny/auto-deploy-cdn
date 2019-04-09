@@ -5,7 +5,7 @@ const queryString = require('querystring')
 /**
  * 资源部署到CDN后，需要手动使其生效
  */
-function refreshCDN(svnDir = 'ke', svnCommitMessage = '') {
+function refreshCDN(svnDir = '', svnCommitMessage = '', refreshHost = '', refreshPath = '') {
   const username = readlineSync.question('username: ')
   const password = readlineSync.question('password: ')
   const postData = queryString.stringify({
@@ -13,9 +13,9 @@ function refreshCDN(svnDir = 'ke', svnCommitMessage = '') {
     request_submit: svnCommitMessage
   })
   const options = {
-    host: 'corp.youdao.com',
+    host: refreshHost,
     method: 'POST',
-    path: '/IT/updateshared/',
+    path: refreshPath,
     auth: `${username}:${password}`,
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
