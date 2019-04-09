@@ -1,8 +1,6 @@
 const { deleteFileAndDirectory } = require('./utils')
 const colors = require('colors')
-const cwd = process.cwd()
-const tempDir = `${cwd}/temp`
-const distDir = `${cwd}/dist`
+const { tempDir } = require('./config')
 function handleError1() {
   try {
     console.log('任务失败，删除创建的临时目录'.bgRed)
@@ -12,7 +10,7 @@ function handleError1() {
     throw e
   }
 }
-function handleError2() {
+function handleError2(distDir) {
   try {
     console.log('任务失败，删除创建的dist目录'.bgRed)
     deleteFileAndDirectory(distDir)

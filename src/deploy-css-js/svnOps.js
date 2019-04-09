@@ -1,6 +1,5 @@
 const { spawnSync } = require('child_process')
 const colors = require('colors')
-const { readdirSync } = require('fs')
 const { tempDir } = require('./config')
 /**
  * 拉取svn上的资源
@@ -45,29 +44,26 @@ function svnUpdateRemote(project, commitMessage) {
  */
 function svnAddOrUpdate(project) {
   const projectPath = `${tempDir}/${project}`
-  // const projectFiles = readdirSync(projectPath)
   const add = spawnSync('svn', ['add', '.', '--no-ignore', '--force'], {
     cwd: projectPath,
     encoding: 'utf8'
   })
   let { status, output } = add
   if (status !== 0) {
-    const update = spawnSync('svn', ['update', '.'], {
-      cwd: projectPath,
-      encoding: 'utf8'
-    })
-    let { status, output } = update
-    if (status !== 0) {
-      throw new Error(output.join(''))
-    } else {
-      console.log(output.join(''))
-    }
+    throw new Error(output.join(''))
+    // const update = spawnSync('svn', ['update', '.'], {
+    //   cwd: projectPath,
+    //   encoding: 'utf8'
+    // })
+    // let { status, output } = update
+    // if (status !== 0) {
+    //   throw new Error(output.join(''))
+    // } else {
+    //   console.log(output.join(''))
+    // }
   } else {
     console.log(output.join(''))
   }
-  // projectFiles.forEach(item => {
-  //
-  // })
 }
 
 function svnCommit(project, commitMessage) {
