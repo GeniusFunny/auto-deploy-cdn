@@ -1,13 +1,13 @@
-const autoAssets = require('./src/deploy-css-js')
+const deployAssets = require('./src/deploy-css-js')
 /*
   示例
 */
-autoAssets({
-  svnDir: 'xx',
-  svnProjectName: 'xxx',
-  svnRemote: 'xxxx',
+deployAssets({
+  svnDir: '',
+  svnProjectName: '',
+  svnRemote: '',
   autoGit: false,
-  autoRefresh: false,
+  autoRefresh: true,
   refreshPath: '',
   refreshHost: '',
   distDir: 'dist',

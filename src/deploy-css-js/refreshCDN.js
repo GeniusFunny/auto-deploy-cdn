@@ -5,12 +5,12 @@ const queryString = require('querystring')
 /**
  * 资源部署到CDN后，需要手动使其生效
  */
-function refreshCDN(svnDir = '', svnCommitMessage = '', refreshHost = '', refreshPath = '') {
+function refreshCDN({ svnDir = '', commitMessage = '', refreshHost = '', refreshPath = '' }) {
   const username = readlineSync.question('username: ')
   const password = readlineSync.question('password: ')
   const postData = queryString.stringify({
     request_log: svnDir,
-    request_submit: svnCommitMessage
+    request_submit: commitMessage
   })
   const options = {
     host: refreshHost,

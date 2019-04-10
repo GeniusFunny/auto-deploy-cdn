@@ -21,7 +21,7 @@ const refreshCDN = require('./refreshCDN')
  * @param distDir 除去静态资源的资源存放的目录
  * @param includes 需要部署到CDN的资源类型，默认['css', 'js']
  */
-function autoAssets(
+function deployAssets(
   {
     svnRemote,
     svnProjectName,
@@ -103,7 +103,7 @@ function autoAssets(
     isCorrectType('refreshHost', refreshHost, 'string')
     isCorrectType('refreshPath', refreshPath, 'string')
     try {
-      refreshCDN(svnDir, commitMessage, refreshHost, refreshHost)
+      refreshCDN({ svnDir, commitMessage, refreshHost, refreshPath })
     } catch (e) {
       console.log('更新shared请求失败'.bgRed)
       throw e
@@ -151,4 +151,4 @@ function autoAssets(
   }
 }
 
-module.exports = autoAssets
+module.exports = deployAssets
