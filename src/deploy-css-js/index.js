@@ -3,7 +3,7 @@ const colors = require('colors')
 const { svnCoResource, svnUpdateRemote } = require('./svnOps')
 const gitOps = require('./gitOps')
 const { handleError1, handleError2 } = require('./handleError')
-const { deleteFileAndDirectory, mkdir, moveFiles, isCorrectType, include, exclude } = require('./utils')
+const { deleteFileAndDirectory, mkdir, moveFiles, isCorrectType, include, exclude } = require('../utils')
 const { tempDir } = require('./config')
 const refreshCDN = require('./refreshCDN')
 

@@ -1,4 +1,4 @@
-const { deleteFileAndDirectory } = require('./utils')
+const { deleteFileAndDirectory } = require('../utils')
 const colors = require('colors')
 const { tempDir } = require('./config')
 function handleError1() {

@@ -92,7 +92,12 @@ deployAssets({
 ##### 1. 编写一个upload.js
 
 ```js
-
+const { deployImages } = require('auto-deploy2cdn')
+deployImages({
+  sourcePath: 'test/constants/images.js', // 管理图片url的js文件相对于根目录的位置
+  uploadTargetHost: 'xxx.com', // cdn的host
+  uploadTargetPath: '/upload?a=xxx&b=xxx&c=xxx' // cdn的path
+})
 ```
 
 ##### 2. 利用npm scripts hooks 触发
