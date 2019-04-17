@@ -1,11 +1,9 @@
 const readlineSync = require('readline-sync')
 const colors = require('colors')
-const { svnCoResource, svnUpdateRemote } = require('./svnOps')
-const gitOps = require('./gitOps')
 const { handleError1, handleError2 } = require('./handleError')
-const { deleteFileAndDirectory, mkdir, moveFiles, isCorrectType, include, exclude } = require('../utils')
+const { deleteFileAndDirectory, mkdir, moveFiles, isCorrectType, include, exclude } = require('../../utils')
 const { tempDir } = require('./config')
-const refreshCDN = require('./refreshCDN')
+const { svnUpdateRemote, svnCoResource, gitOps, refreshCDN} = require('../../operations')
 
 /**
  *
@@ -60,7 +58,7 @@ function deployAssets(
     throw e
   }
   try {
-    svnCoResource(svnRemote)
+    svnCoResource(svnRemote, tempDir)
   } catch (e) {
     console.log('svn checkout 失败'.bgRed)
     handleError1()
@@ -85,7 +83,7 @@ function deployAssets(
     throw e
   }
   try {
-    svnUpdateRemote(svnProjectName, commitMessage)
+    svnUpdateRemote(svnProjectName, commitMessage, tempDir)
   } catch (e) {
     console.log('svn 更新失败'.bgRed)
     handleError1()

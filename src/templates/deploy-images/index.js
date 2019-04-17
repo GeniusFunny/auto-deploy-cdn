@@ -1,5 +1,5 @@
 const path = require('path')
-const { isCorrectType } = require('../utils')
+const { isCorrectType } = require('../../utils')
 const readImagesUrl = require('./readImagesUrl')
 const writeImageUrl = require('./writeImageUrl')
 const upload = require('./upload')
@@ -8,11 +8,10 @@ const { renameSync } = require('fs')
 
 const cwd = process.cwd()
 
-function deployImages({sourcePath, uploadTargetHost, uploadTargetPath}) {
+function deployImages({sourcePath, uploadOptions, successCode}) {
   try {
     isCorrectType('sourcePath', sourcePath, 'string')
-    isCorrectType('uploadTargetHost', uploadTargetPath, 'string')
-    isCorrectType('uploadTargetPath', uploadTargetPath, 'string')
+    isCorrectType('uploadTargetHost', uploadOptions, 'object')
   } catch (e) {
     throw e
   }
@@ -48,7 +47,7 @@ function deployImages({sourcePath, uploadTargetHost, uploadTargetPath}) {
         if (String.prototype.indexOf.call(item.value, 'http') !== -1) {
           results.push(item)
         } else {
-          upload(uploadTargetHost, uploadTargetPath, { value: path.resolve(sourcePathParent, item.value), name: item.name})
+          upload({ value: path.resolve(sourcePathParent, item.value), name: item.name}, uploadOptions, successCode)
         }
       })
       if (images.length === results.length) {
@@ -61,6 +60,16 @@ function deployImages({sourcePath, uploadTargetHost, uploadTargetPath}) {
   eventEmitter.on('uploadSuccess', (item) => {
     try {
       results.push(item)
+      if (results.length === images.length) {
+        writeImageUrl(results, tempPath)
+      }
+    } catch (e) {
+      renameSync(tempPath, sourcePath)
+    }
+  })
+  eventEmitter.on('uploadFailed', (item) => {
+    try {
+      results.push(images[images.map(item => item.name).indexOf(item.name)])
       if (results.length === images.length) {
         writeImageUrl(results, tempPath)
       }
