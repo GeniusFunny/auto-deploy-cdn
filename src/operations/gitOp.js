@@ -63,6 +63,9 @@ function gitPush(branch = 'master') {
   }
 }
 
-module.exports = gitOps
-
-
+module.exports = {
+  gitOps,
+  gitAdd,
+  gitCommit,
+  gitPush
+}
