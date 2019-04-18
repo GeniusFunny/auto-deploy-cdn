@@ -13,13 +13,13 @@ templates.deploy_images({
 templates.deploy_css_js({
   svnDir: 'ke',
   svnProjectName: 'yoj',
-  svnRemote: 'https://corp.youdao.com/svn/ydstatic/ke/yoj/',
+  svnRemote: 'https://xxx.yyy.com/svn/ydstatic/ke/yoj/',
   autoGit: false,
   autoRefresh: true,
   distDir: 'v-1.2',
   buildDir: 'build',
   assetsDir: 'build/assets',
   includes: ['css', 'js'],
-  refreshHost: 'corp.youdao.com',
+  refreshHost: 'xxx.yyy.com',
   refreshPath: '/IT/updateshared/',
 })

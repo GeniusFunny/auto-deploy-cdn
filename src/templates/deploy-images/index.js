@@ -8,6 +8,12 @@ const { renameSync } = require('fs')
 
 const cwd = process.cwd()
 
+/**
+ * 
+ * @param {sourcePath} 集中化管理images的js文件地址
+ * @param {uploadOptions} 上传图片的配置，参见node http.reqeust(options)
+ * @param {successCode} 表示上传成功的HTTP状态码，例如302、200
+ */
 function deployImages({sourcePath, uploadOptions, successCode}) {
   try {
     isCorrectType('sourcePath', sourcePath, 'string')

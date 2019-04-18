@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce9ebb74-019b-459e-981f-b708f5b62630" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy-css-js/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy-css-js/gitOps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy-css-js/handleError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy-css-js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy-css-js/refreshCDN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy-css-js/svnOps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy-images/eventEmitter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy-images/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy-images/readImagesUrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy-images/upload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy-images/writeImageUrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/constants/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/constants/images.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/images/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/test/images/avatar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/images/bg 2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/test/images/bg 2.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="ce9ebb74-019b-459e-981f-b708f5b62630" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -32,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="28">
@@ -41,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+            <state relative-caret-position="112">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -287,16 +268,15 @@
       <workItem from="1555407870140" duration="20000" />
       <workItem from="1555473559195" duration="2000" />
       <workItem from="1555475242724" duration="603000" />
-      <workItem from="1555480316257" duration="2371000" />
+      <workItem from="1555480316257" duration="2821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70482000" />
+    <option name="totallyTimeSpent" value="70932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31759655" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -527,17 +507,17 @@
     <entry file="file://$PROJECT_DIR$/build/assets/test.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
